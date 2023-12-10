@@ -4,3 +4,5 @@ spring:
     url: jdbc:mariadb://mariadb:3306/mydb
     username: root
     password: test1357
+  zipkin:
+    base-url: http://zipkin:9411
