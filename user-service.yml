@@ -9,3 +9,6 @@ spring:
     enabled: true
 gateway:
   ip: 172.19.0.11
+token:
+  expiration_time: 86400
+  secret: abcdefg
