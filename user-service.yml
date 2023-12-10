@@ -4,7 +4,3 @@ spring:
     url: jdbc:mariadb://mariadb:3306/mydb
     username: root
     password: test1357
-
-
-    git config --global user.email "thinkcsw@gmail.com"
-  git config --global user.name "thinkcsw"
