@@ -7,3 +7,5 @@ spring:
   zipkin:
     base-url: http://zipkin:9411
     enabled: true
+gateway:
+  ip: 172.19.0.11
