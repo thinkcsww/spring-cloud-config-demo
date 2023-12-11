@@ -4,11 +4,19 @@ spring:
     url: jdbc:mariadb://mariadb:3306/mydb
     username: root
     password: test1357
-  zipkin:
-    base-url: http://zipkin:9411
-    enabled: true
 gateway:
   ip: 172.19.0.11
 token:
   expiration_time: 86400
   secret: abcdefg
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
+    propagation:
+      consume: b3
+      produce: b3_multi
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
